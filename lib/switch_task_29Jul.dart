@@ -7,8 +7,10 @@ void switchTask() {
   double priceC = 90.00;
   double priceU = 45.75;
 
-  while (true) {
-    int input = getPositiveIntInput(
+  int input;
+
+  do {
+    input = getPositiveIntInput(
       '\nChoose a product from menu to add to cart.\n'
           '-----------------MENU----------------\n'
           '        Product        Price\n'
@@ -57,9 +59,5 @@ void switchTask() {
       default:
         print('Invalid input');
     }
-
-    if (input == 0) {
-      break;
-    }
-  }
+  } while (input != 0);
 }
