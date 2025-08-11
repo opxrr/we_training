@@ -21,7 +21,7 @@ double result({double? n1, n2, n3, n4}) {
       }
       return sum;
     case 2:
-      if (resultList[0] < resultList[1] ) {
+      if (resultList[0] < resultList[1]) {
         return resultList[1] / resultList[0];
       } else {
         return resultList[0] / resultList[1];

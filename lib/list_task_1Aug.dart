@@ -1,4 +1,3 @@
-import 'dart:io';
 
 import 'custom_functions.dart';
 
@@ -13,13 +12,13 @@ void listTask() {
   while (true) {
     int choice = getPositiveIntInput(
       '----------MENU----------\n'
-          '1- Add value\n'
-          '2- Remove\n'
-          '3- Update\n'
-          '4- Show Values\n'
-          '5- Search\n'
-          '6- Exit\n'
-          'Pick an option : ',
+      '1- Add value\n'
+      '2- Remove\n'
+      '3- Update\n'
+      '4- Show Values\n'
+      '5- Search\n'
+      '6- Exit\n'
+      'Pick an option : ',
     );
     switch (choice) {
       case 1:
@@ -32,7 +31,7 @@ void listTask() {
         if (myList.isNotEmpty) {
           int inChoice = getIntInput(
             '1- Remove by value\n'
-                '2- Remove by index ',
+            '2- Remove by index ',
           );
           if (inChoice == 1) {
             int r = getIntInput('Enter a value to remove : ');
@@ -73,9 +72,9 @@ void listTask() {
         myList.isEmpty
             ? print('List is empty.')
             : print(
-          '---------------------\n'
+              '---------------------\n'
               '${myList.join(',')}',
-        );
+            );
         break;
       case 5:
         if (myList.isNotEmpty) {
@@ -88,8 +87,7 @@ void listTask() {
         }
         break;
       case 6:
-        print('Exiting program...');
-        exit(0);
+        return;
       default:
         print('Invalid input');
     }
