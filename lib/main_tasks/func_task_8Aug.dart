@@ -1,4 +1,4 @@
-import 'package:we_tasks/custom_functions.dart';
+import 'package:we_tasks/custom_functions/custom_functions.dart';
 
 void funcTask() {
   List<int> myList = [];

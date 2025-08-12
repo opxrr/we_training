@@ -1,5 +1,5 @@
 import 'dart:io';
-import 'custom_functions.dart';
+import '../custom_functions/custom_functions.dart';
 
 void listAndMap() {
   List<Map<String, dynamic>> school = [];

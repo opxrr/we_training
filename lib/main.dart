@@ -1,10 +1,11 @@
 import 'dart:io';
-import 'package:we_tasks/Car.dart';
-import 'package:we_tasks/func_task_8Aug.dart';
-import 'package:we_tasks/switch_task_29Jul.dart';
-import 'custom_functions.dart';
-import 'list_and_map_5Aug.dart';
-import 'list_task_1Aug.dart';
+import 'package:we_tasks/main_tasks/func_task_8Aug.dart';
+import 'package:we_tasks/main_tasks/switch_task_29Jul.dart';
+import 'custom_functions/custom_functions.dart';
+import 'main_tasks/employee_task_8Aug.dart';
+import 'main_tasks/list_and_map_5Aug.dart';
+import 'main_tasks/list_task_1Aug.dart';
+import 'oop/oop_task_12Aug/mainTesting.dart';
 
 void main() {
   //  Car car1 = Car();
@@ -21,11 +22,13 @@ void main() {
   // car2.printCar();
   while (true) {
     int choice = getPositiveIntInput(
-      '----Task Menu----\n'
-      '1- Switch Task\n'
-      '2- List Task\n'
-      '3- List And Map\n'
-      '4- Function Task\n'
+      '----------Tasks Menu---------\n'
+      '1- Switch Task       (29-Jul)\n'
+      '2- List Task         (1-Aug)\n'
+      '3- List And Map Task (5-Aug)\n'
+      '4- Function Task     (8-Aug)\n'
+      '5- Employees Task    (8-Aug)\n'
+      '6- OOP Task          (12-Aug)\n'
       '0- Exit\n'
       'Pick a task to test:',
     );
@@ -43,6 +46,12 @@ void main() {
       case 4:
         funcTask();
         break;
+      case 5:
+        employeesTask();
+        break;
+       case 6:
+         task12Aug();
+         break;
       case 0:
         print('Exiting program...');
         exit(0);

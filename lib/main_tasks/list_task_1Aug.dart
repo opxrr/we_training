@@ -1,5 +1,5 @@
 
-import 'custom_functions.dart';
+import '../custom_functions/custom_functions.dart';
 
 /*1-add value
 * 2-remove (index/value)

@@ -1,4 +1,4 @@
-import 'custom_functions.dart';
+import '../custom_functions/custom_functions.dart';
 
 void switchTask() {
   int qA = 0, qV = 0, qC = 0, qU = 0;
