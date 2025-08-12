@@ -4,9 +4,10 @@ import 'package:we_tasks/oop/oop_task_12Aug/point2D.dart';
 class Point3D extends Point2D {
   double _z = 0.0;
 
+
   Point3D(super.x, super.y, this._z);
 
-  Point3D.defaultPoint() : super.defaultPoint();
+  Point3D.defaultPoint() : _z = 0.0, super.defaultPoint();
 
   double getZ() => _z;
 
@@ -19,5 +20,6 @@ class Point3D extends Point2D {
 
   List<double> getXYZ() => [getX(), getY(), _z];
 
+  @override
   String toString() => "(${getX()}, ${getY()}, $_z)";
 }

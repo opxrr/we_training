@@ -21,5 +21,6 @@ class Point2D {
 
   List<double> getXY() => [_x, _y];
 
+  @override
   String toString() => "($_x, $_y)";
 }
